@@ -1,6 +1,6 @@
 # Introduction
 
-This python class let you scrap the leaderboard in your favourite Kaggle competition for kwon where you will be (theoretically). This is a web scraper that takes a score and compares you in the leaderboard (It don't make submissions for you, neither has access to secret databases, just take all the scores from the leaderboard page and interpole your position in there, just theoretically!)
+This python class let you scrap the leaderboard in your favourite Kaggle competition for know where you will be (theoretically). This is a web scraper that takes a score and compares you in the leaderboard (It don't make submissions for you, neither has access to secret databases, just take all the scores from the leaderboard page and interpole your position in there, just theoretically!)
 
 # How it works
 
@@ -22,7 +22,7 @@ Kaggle_class.Load_backup_scores(filename = 'Some_random_name.csv')
 
 Finally, you can see your possition in the leaderboard using *Represent_my_score(my_score = x)*, where x is your submit score (Once again, "theoretically").
 ```python
-Kaggle_class.Represent_my_score(my_score = 0.77)
+Kaggle_class.Represent_my_score(my_score = 2)
 ```
 ![Example plot](Example_plot.png)
 
@@ -34,12 +34,12 @@ Kaggle_class = Kaggle()
 # Get scores
 Kaggle_class.Get_scores(url = 'https://www.kaggle.com/c/ashrae-energy-prediction/leaderboard')
 
-# Backip stuff
+# Backup stuff
 Kaggle_class.Save_backup_scores(filename = 'Some_random_name.csv')
 Kaggle_class.Load_backup_scores(filename = 'Some_random_name.csv')
 
 # Plots
-Kaggle_class.Represent_my_score(my_score = 0.77)
+Kaggle_class.Represent_my_score(my_score = 2)
 ```
 
 
